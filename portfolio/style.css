@@ -1,0 +1,390 @@
+:root {
+    --color-gold: #bdae82;
+    --color-black: #000;
+    --color-white: #fff;
+    --font1: 60px;
+    --font2: 40px;
+  }
+@font-face {
+    font-family: 'Merriweather';
+    src: url("assets/fonts/Merriweather-Bold.ttf");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Inter-r';
+    src: url("assets/fonts/Inter-Regular.ttf");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Inter-b';
+    src: url("assets/fonts/Inter-Bold.ttf");
+    font-weight: 700;
+  }
+  html {
+    scroll-behavior: smooth; 
+  }
+  body{
+    background-color: var(--color-black);
+  }
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-link {
+    padding: 0 20px;    
+    transition: .3s;
+    font-family:Inter-r;
+    font-weight: 400;
+    color: var(--color-white);
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration:none;
+  }
+  .nav-link:hover{
+    line-height: 50px;
+    color:  var(--color-gold);
+  }
+  nav{
+      margin-left: auto;
+      display: flex;
+  }
+  .switch-lng{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 20px;
+  }
+  .text-lang{
+      color: var(--color-white);
+      font-weight: 400;
+      color: var(--color-white);
+      font-size: 20px;
+      color: var(--color-white);
+      text-decoration:none;
+  }
+  .text-lang:hover{
+    line-height: 50px;
+    color:  var(--color-gold);
+  }
+  .header>.container{
+    display: flex;
+    background: url('./assets/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+  .logo {
+    background-size: contain;
+    background-repeat: no-repeat;  
+    transition: 0.3s;
+    padding: 20px 20px;
+  }
+  .logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+  }
+  .hero{
+    background: url('./assets/img/bg.jpg');
+    background-position: center -94px;
+    background-repeat: no-repeat;
+    height: 800px;
+    align-items: center;
+  }
+  p{
+      color: var(--color-white);
+  }
+  h1{
+    font-family:Merriweather;
+    font-weight: 700;
+    color: var(--color-white);
+    font-size: 60px;
+    padding: 150px 0 0 80px;
+    margin: 0;
+  }
+.hero>p{
+    font-family:Inter-r;
+    font-weight: 400;
+    color: var(--color-white);
+    font-size: 20px;
+    padding: 0 0 10px 80px;
+}
+.bnt-container{
+    font-family:Inter-r;
+    font-weight: 400;
+    background-color: var(--color-gold);
+    font-size: 20px;
+    border: 0;
+    color: var(--color-black);
+    padding: 14px 65px;
+}
+.bnt-container:hover{
+    border: 1px solid var(--color-gold);
+    border-color: var(--color-gold);
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    font-size: 20px;
+    padding: 13px 64px;
+}
+h2{
+    align-content: center;
+    margin: 0;
+    font-family:Merriweather;
+    font-weight: 700;
+    color: var(--color-gold);
+    font-size: 40px;
+    padding: 100px 0 60px 0;
+    text-align:center;
+}
+.section{
+background-color: var(--color-black);
+}
+.skills-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.skills-item>.skills-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skills-icon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+  }
+.skills-item>p{
+    font-family:Inter-r;
+    font-weight: 400;
+    color: var(--color-white);
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.portfolio-btns{
+    display: flex;
+    justify-content: center;
+}
+.btn-portfolio{
+    font-family:Inter-r;
+    font-weight: 400;
+    background-color: var(--color-gold);
+    font-size: 20px;
+    border: 1;
+    color: var(--color-black);
+    padding: 14px 65px;
+    margin: 0 10px 0 0;
+    border-color: var(--color-gold);
+    background-color: var(--color-black);
+    color: var(--color-gold);
+}
+
+.btn-portfolio:hover{
+    background-color: var(--color-gold);
+    color: var(--color-black);
+}
+.portfolio-items{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.portfolio-img{
+    padding: 10px;
+}
+
+sect-video{
+    display: flex;
+}
+.player {
+    position: relative;
+    top:-450px;
+    right:-650px;
+  }
+.player:hover{
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+}
+.price-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 100px 0;
+}
+.price-item{
+    border: 1px solid var(--color-gold);
+    border-color: var(--color-gold);
+    padding: 20px 90px;
+}
+.inter-bold{
+    font-family:Merriweather;
+    font-weight: 700;
+    color: var(--color-white);
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 56px;
+}
+.price-item>.merriweather-bold{
+    font-family:Merriweather;
+    font-weight: 700;
+    color: var(--color-gold);
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 48px;
+}
+.price-item>.inter-regular{
+    font-family:Inter-r;
+    font-weight: 400;
+    color: var(--color-white);
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.btn-price{
+    font-family:Inter-r;
+    font-weight: 400;
+    background-color: var(--color-gold);
+    font-size: 20px;
+    border: 0;
+    color: var(--color-black);
+    padding: 14px 65px;
+}
+.btn-price:hover{
+    border: 1px solid var(--color-gold);
+    border-color: var(--color-gold);
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    font-size: 20px;
+    padding: 13px 64px;
+}
+.contacts-container{
+    display: flex;
+    justify-content: end;
+}
+.contacts-h2{
+    display: flex;
+    justify-content: end;
+    font-family:Inter-r;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--color-gold);
+    padding: 40px 280px;
+}
+.inpur-email{
+    border: 1px solid var(--color-gold);
+    border-color: var(--color-gold);
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    width: 450px;
+    padding: 10px;
+    margin: 0 30px 0 0;
+}
+.inpur-tel{
+    border: 1px solid var(--color-gold);
+    border-color: var(--color-gold);
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    width: 450px;
+    padding: 10px;
+    margin: 0 30px 0 0;
+}
+.inpur-textarea{
+    border: 1px solid var(--color-gold);
+    border-color: var(--color-gold);
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    width: 450px;
+    padding: 10px;
+    margin: 0 30px 0 0;
+}
+.btn-submit{
+    font-family:Inter-r;
+    font-weight: 400;
+    background-color: var(--color-gold);
+    font-size: 20px;
+    border: 0;
+    color: var(--color-black);
+    padding: 14px 45px;
+}
+.btn-submit:hover{
+    border: 1px solid var(--color-gold);
+    border-color: var(--color-gold);
+    background-color: var(--color-black);
+    color: var(--color-gold);
+    font-size: 20px;
+    padding: 13px 44px;
+}
+.section-comtacts{
+    background: url('./assets/img/contacts.jpg');
+    background-repeat: no-repeat;
+    height: 700px;
+    align-items: center;
+}
+.footer>.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-black);
+}
+.footer-data{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 20px;
+}
+.footer-data>p{
+    font-family:Inter-r;
+    font-weight: 400;
+    color: var(--color-white);
+    font-size: 20px;
+    padding: 0 0 0 20px;
+}
+.rolling_scopes_school{
+    font-family:Inter-r;
+    font-weight: 400;
+    color: var(--color-white);
+    font-size: 20px;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.social-list{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.social-list>ul{
+    font-family:Inter-r;
+    font-weight: 400;
+    color: var(--color-white);
+    font-size: 20px;
+    padding: 0;
+    list-style: none;
+}
+.footer-social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nav-social{
+    padding: 0 20px 0 0;
+}
+.nav-social:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+      contrast(87%);
+  }
+  .link-github{
+      color: var(--color-white);
+  }
+  .link-github:hover{
+    color: var(--color-gold);
+}
